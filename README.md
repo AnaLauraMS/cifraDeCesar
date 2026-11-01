@@ -89,6 +89,3 @@ Para rodar a aplicação inteira na sua máquina de forma automatizada, você s�
 👩‍💻 Desenvolvido por
 
 Ana Laura Martins Souto (AnaLauraMS)
-
-GitHub
-Agora é só salvar o arquivo no seu editor, fazer o commit e o push (`git add .`, `git commit -m "docs: atualiza README completo"` e `git push`) para o seu GitHub ficar com uma cara super profissional!
