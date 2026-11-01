@@ -1,0 +1,15 @@
+# Ambiente
+.env
+
+# Node / Frontend
+front/frontend/node_modules/
+front/frontend/dist/
+
+# Java / Backend
+back/poneglyph-api/target/
+back/poneglyph-api/.idea/
+.idea/
+
+# SO
+.DS_Store
+Thumbs.db
