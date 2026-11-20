@@ -12,15 +12,15 @@ public class Cipher {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //hash único que o usuário usará para descriptografar (nosso "Log Pose")
-    @Column(nullable = false, unique = true)
+    // Hash criptográfico de uso único (serve como Chave Privada para a descriptografia)
+    @Column(name = "hash_key", nullable = false, unique = true, length = 128)
     private String hashKey;
 
-    //número de casas que a mensagem foi deslocada
-    @Column(nullable = false)
+    // Passo da Cifra de César (número de casas deslocadas para mais ou para menos)
+    @Column(name = "step", nullable = false)
     private Integer step;
 
-    //garantir que o hash seja usado uma única vez
-    @Column(nullable = false)
+    // Coluna para validar se o hash já foi utilizado (true/false) - Trava de uso único
+    @Column(name = "used", nullable = false)
     private Boolean used = false;
 }
